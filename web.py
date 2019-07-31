@@ -1,5 +1,4 @@
-from flask import Flask, request, send_file, flash, render_template, abort, redirect, send_from_directory, jsonify, \
-    make_response, g, session, redirect, url_for
+from flask import Flask, request, send_file, flash, render_template, abort, send_from_directory, jsonify, make_response, g, redirect, url_for
 
 app = Flask(__name__)
 
