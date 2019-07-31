@@ -1,10 +1,18 @@
-from flask import Flask, request, send_file, flash, render_template, abort, make_response, redirect, url_for
+from flask import Flask, request, send_file, render_template, make_response, redirect, url_for
 
 app = Flask(__name__)
 
 from exampleapp import exampleapp_bp
 
 app.register_blueprint(exampleapp_bp)
+
+
+@app.route("/favicon.ico")
+def favicon():
+    try:
+        return send_file('/path/to/project/image.ico', mimetype='image/vnd.microsoft.icon')
+    except:
+        return ''
 
 
 @app.route("/")
