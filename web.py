@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file, flash, render_template, abort, send_from_directory, jsonify, make_response, redirect, url_for
+from flask import Flask, request, send_file, flash, render_template, abort, send_from_directory, make_response, redirect, url_for
 
 app = Flask(__name__)
 
